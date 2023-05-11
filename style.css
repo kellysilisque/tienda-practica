@@ -203,7 +203,7 @@ h3 {
 .contacto-container {
     display: grid;
     gap: 15px;
-    grid-template-columns: repeat(auto-fit, minmax 270px, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
 }
 .caja{
     padding: 70px;
@@ -242,7 +242,7 @@ h3 {
 .btn:hover{
     letter-spacing: 1px;
 }
-.btn:hover{
+.caja:hover{
     transform: scale(1.03);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
@@ -285,11 +285,14 @@ h3 {
         padding: 20px;
 
     }
+     /*FIN responsive-sección-INDEX*/
+     
     /*responsive SECCION-CONTACTOS*/
     .wrapper{
         padding: 20px;
     }
-    /*FIN responsive-sección-INDEX*/
+    /* FIN responsive SECCION-CONTACTOS*/
+
     /*responsive-FOOTER*/
     .pie-pagina .grupo{
         width: 90%;
