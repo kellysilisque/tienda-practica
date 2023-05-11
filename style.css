@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background:white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+/*HEADER*/
+.menu-container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.back{
+    padding: 32px 0;
+    background-color:#f1d7ff ;
+    height: 90px;
+    
+}
+.menu-container{
+    position: absolute;
+    top: 5px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000;
+    padding: 0 10px;
+      
+}
+.menu-container .logo img{
+    width: 150px; 
+
+}
+.menu-container .navbar ul li{
+    position: relative;
+    float: left;
+}
+.menu-container .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: gray;
+    display: block;
+    text-decoration: none;
+}
+.menu-container .navbar ul li a:hover{
+    color: white;
+}
+#menu{
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+}
+.menu-container label{
+    cursor: pointer;
+    display: none;
+}
+.aviso{
+    background: yellow;
+    text-align: center;
+    margin-top: 3px;
+}
+/*FIN HEADER*/
+/*FOOTER*/
+.pie-pagina {
+    width: 100%;
+    background-color: grey;   
+}
+.pie-pagina .grupo{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo .box figure img{
+    width: 160px;
+}
+.pie-pagina .grupo .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo a{
+    text-decoration: none;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo .red-social a{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: whitesmoke;
+    margin-right: 10px;
+    background-color: rgb(105, 105, 105);
+    text-align: center;
+}
+.pie-pagina .grupo h2:hover{
+    color: #f1d7ff;
+}
+.pie-pagina .grupo-1{
+    background-color: rgb(73, 73, 73);
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+.pie-pagina .grupo-1 small{
+    font-size: 15px;
+
+}
+/*FIN FOOTER*/
+/*SECCIÓN CARDS-INDEX*/
+section{
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+.container{
+    background: white;
+    padding: 15px 9%;
+    padding-bottom: 100px;
+    /*padding-top: 100px;*/
+}
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+}
+.container .box-container .box{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    background: #f1d7ff;
+    text-align: center;
+    padding: 30px 20px;
+}
+.container .box-container .box img{
+    width: 290px;
+}
+.container .box-container .box h2{
+    color: rgb(94, 93, 93);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 0;
+}
+.container .box-container .box  ul{
+    color: rgb(94, 93, 93);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 4.5px 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.8;
+}
+.container .box-container .box .btn{
+    margin-top: 10px;
+    display: inline-block;
+    color: white;
+    background:hwb(279 42% 2%);
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+.container .box-container .box .btn:hover{
+    letter-spacing: 1px;
+}
+.container .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+    transform: scale(1.03);
+}
+/*FIN SECCIÓN CARDS-INDEX*/
+
+
+
+
+
+
+    /*RESPONSIVE*/
+/*responsive-HEADER*/
+@media(max-width:991px) {
+    .menu-container {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;   
+   }
+    
+    .back .logo img {
+        width: 130px;
+    }
+    .menu-container label {
+        display: initial;
+    }
+    .back {
+        padding: 47px 0;
+    }
+    .menu-container .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: gainsboro;
+        display: none;
+    }
+    .menu-container .navbar ul li{
+        width: 100%;
+    }
+    #menu:checked ~.navbar {
+        display: initial;
+    }
+    /*FIN responsive-HEADER*/
+    /*responsive-SECCIÓN-INDEX*/
+    .container{
+        padding: 20px;
+    }
+    /*FIN responsive-sección-INDEX*/
+    /*responsive-FOOTER*/
+    .pie-pagina .grupo{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+    /*FIN responsive FOOTER*/
+}
