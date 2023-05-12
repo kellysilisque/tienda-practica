@@ -70,7 +70,7 @@ body{
 /*FOOTER*/
 .pie-pagina {
     width: 100%;
-    background-color: grey;   
+    background-color: rgba(128, 128, 128, 0.575);   
 }
 .pie-pagina .grupo{
     width: 100%;
@@ -107,11 +107,11 @@ body{
     line-height: 45px;
     color: whitesmoke;
     margin-right: 10px;
-    background-color: rgb(105, 105, 105);
+    background-color: rgba(105, 105, 105, 0.5);
     text-align: center;
 }
 .pie-pagina .grupo h2:hover{
-    color: #f1d7ff;
+    color: #d186fa;
 }
 .pie-pagina .grupo-1{
     background-color: rgb(73, 73, 73);
@@ -320,6 +320,94 @@ h1{
     transform: scale(1.03);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
+/*FIN seccion:Bijou*/
+
+/*SECCION TAZA*/
+.wrapper-taza{
+    margin: 10px auto;
+    padding: 0 10px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+h1{
+    background-color: burlywood;
+    font-size: 300%;
+    text-align: center;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    text-shadow: 0 15px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.wrapper-taza ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: gainsboro;
+    font-size: 100%;
+    text-align: center;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    text-shadow: 0 15px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    height: 20px    
+}
+.wrapper-taza ul li a{
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 6px 16px;
+    background: ghostwhite;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+}
+.wrapper-taza ul li a:hover{
+    letter-spacing: 1px;
+}
+.taza-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    
+}
+.caja-taza {
+    padding: 70px;
+    text-align: center;
+    border-radius: 5px;
+    background: rgba(81, 155, 81, 0.541);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+.caja-taza img{
+    height: 250px;
+    padding-top: 3px;
+    width: 100%;
+}
+.caja-taza p{
+    color: #444;
+    padding: 10px 0;
+    font-size: 20px;
+    line-height: 1.6;
+}
+.caja-taza:hover{
+    transform: scale(1.03);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
     /*RESPONSIVE*/
 /*responsive-HEADER*/
 @media(max-width:991px) {
