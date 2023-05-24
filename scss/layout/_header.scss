@@ -13,10 +13,10 @@
     padding: 0 10px;
       
     .logo{
-    img{
-    width: 150px; 
+        img{
+    width: 150px;
+        }
     }
- }
    .navbar 
     ul{
         li{
@@ -25,12 +25,12 @@
             a{
                  font-size: 18px;
                  padding: 20px;
-                 color: gray;
+                 color: nth($colores,2);
                  display: block;
                  text-decoration: none;
 
                   &:hover{
-                     color: white;
+                     color: nth($colores,1 );
                     }
             }
         }
@@ -43,7 +43,7 @@
 }
 .back{
     padding: 32px 0;
-    background-color:#f1d7ff ;
+    background-color:nth($colores,6);
     height: 90px;   
 }
 
@@ -54,7 +54,7 @@
     width: 25px;
 }
 .aviso{
-    background: yellow;
+    background: nth($colores,3 );
     text-align: center;
     margin-top: 3px;
 }
