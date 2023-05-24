@@ -1,0 +1,55 @@
+
+.menu-container{
+    max-width: 1100px;
+    margin: 0 auto;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000;
+    padding: 0 10px;
+      
+    .logo{
+    img{
+    width: 150px; 
+    }
+ }
+   .navbar ul li{
+    position: relative;
+    float: left;
+    a{
+        font-size: 18px;
+        padding: 20px;
+        color: gray;
+        display: block;
+        text-decoration: none;
+        &:hover{
+            color: white;
+        }
+    }
+ }
+    label {
+     cursor: pointer;
+     display: none;
+ }
+}
+.back{
+    padding: 32px 0;
+    background-color:#f1d7ff ;
+    height: 90px;   
+}
+
+#menu{
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+}
+.aviso{
+    background: yellow;
+    text-align: center;
+    margin-top: 3px;
+}
