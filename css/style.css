@@ -6,8 +6,10 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-}
-
-/*layout*/
+  font-family: Arial, Helvetica, sans-serif;
+  background: white;
+  position: relative;
+} /*layout*/
+/*components*/
 
 /*# sourceMappingURL=style.css.map */
