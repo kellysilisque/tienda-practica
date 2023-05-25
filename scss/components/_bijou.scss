@@ -1,0 +1,49 @@
+.wrapper-bijou {
+    @extend %b-t-c;
+    transition: 0.2s; /*agregue algo*/
+    ul{
+        background-color: whitesmoke;
+        @extend %wrapper-ul;
+        /*height: 20px;*/
+
+        li{
+            a {
+                color: white;
+                background: rgb(211, 176, 252); /*cambie el color*/
+                @extend %lista-box;
+
+                &:hover {
+                    letter-spacing: 0.7px;
+                    transform: scale(1.03);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+                }
+            }
+        }
+    }
+}
+h1{
+    background-color: palegreen;
+    @extend %h1;
+}
+
+.bijou-container {
+    @extend %container-products;
+    
+}
+.caja-bijou {
+    background: rgb(255, 216, 222);
+    @extend %boxs-1;
+
+    img{
+        @extend %boxs1-img;
+    }
+    p{
+        @extend %boxs1-p;
+    }
+    &:hover{
+        transform: scale(1.03);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    }
+}
+
+
