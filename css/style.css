@@ -68,12 +68,8 @@
 }
 
 /*components*/
-.wrapper-bijou {
-  transition: 0.2s; /*agregue algo*/
-}
 .wrapper-bijou ul {
   background-color: whitesmoke;
-  /*height: 20px;*/
 }
 .wrapper-bijou ul li a {
   color: white;

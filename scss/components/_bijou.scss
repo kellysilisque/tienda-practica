@@ -1,28 +1,27 @@
 .wrapper-bijou {
     @extend %b-t-c;
-    transition: 0.2s; /*agregue algo*/
+
     ul{
-        background-color: whitesmoke;
+        background-color: nth($colores, 4 );
         @extend %wrapper-ul;
-        /*height: 20px;*/
 
         li{
             a {
-                color: white;
+                color: nth($colores, 1 );
                 background: rgb(211, 176, 252); /*cambie el color*/
                 @extend %lista-box;
 
                 &:hover {
                     letter-spacing: 0.7px;
                     transform: scale(1.03);
-        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+                    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
                 }
             }
         }
     }
 }
 h1{
-    background-color: palegreen;
+    background-color: nth($colores, 7 );
     @extend %h1;
 }
 
