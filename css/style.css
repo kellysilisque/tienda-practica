@@ -81,10 +81,6 @@
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
 
-h1 {
-  background-color: palegreen;
-}
-
 .caja-bijou {
   background: rgb(255, 216, 222);
 }
@@ -93,75 +89,21 @@ h1 {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
 
-.wrapper-taza {
-  margin: 10px auto;
-  padding: 0 10px;
-  padding-bottom: 10px;
-  text-transform: capitalize;
-}
 .wrapper-taza ul {
-  display: flex;
-  justify-content: space-around;
-  background-color: gainsboro;
-  font-size: 100%;
-  text-align: center;
-  padding-bottom: 7px;
-  padding-top: 7px;
-  padding-left: 7px;
-  padding-right: 7px;
-  text-shadow: 0 15px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  height: 20px;
+  background-color: whitesmoke;
 }
 .wrapper-taza ul li a {
-  color: black;
-  border: none;
-  outline: none;
-  font-size: 15px;
-  padding: 6px 16px;
-  background: ghostwhite;
-  border-radius: 5px;
-  display: inline-block;
-  text-decoration: none;
+  color: white;
+  background: rgba(54, 119, 216, 0.329);
 }
 .wrapper-taza ul li a:hover {
-  letter-spacing: 1px;
-}
-
-h1 {
-  background-color: burlywood;
-  font-size: 300%;
-  text-align: center;
-  padding-bottom: 9px;
-  padding-top: 9px;
-  text-shadow: 0 15px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-}
-
-.taza-container {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  letter-spacing: 0.7px;
+  transform: scale(1.03);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
 
 .caja-taza {
-  padding: 70px;
-  text-align: center;
-  border-radius: 5px;
   background: rgba(81, 155, 81, 0.541);
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-  margin: 20px;
-}
-.caja-taza img {
-  height: 250px;
-  padding-top: 3px;
-  width: 100%;
-}
-.caja-taza p {
-  color: #444;
-  padding: 10px 0;
-  font-size: 20px;
-  line-height: 1.6;
 }
 .caja-taza:hover {
   transform: scale(1.03);
@@ -223,7 +165,7 @@ section {
   transform: scale(1.03);
 }
 
-.wrapper-bijou {
+.wrapper-bijou, .wrapper-taza {
   margin: 10px auto;
   padding: 0 10px;
   padding-bottom: 10px;
@@ -231,6 +173,7 @@ section {
 }
 
 h1 {
+  background-color: rgb(224, 198, 164);
   font-size: 300%;
   text-align: center;
   padding-bottom: 9px;
@@ -239,7 +182,7 @@ h1 {
   border-radius: 5px;
 }
 
-.wrapper-bijou ul {
+.wrapper-bijou ul, .wrapper-taza ul {
   display: flex;
   justify-content: space-around;
   font-size: 100%;
@@ -252,7 +195,7 @@ h1 {
   border-radius: 5px;
 }
 
-.wrapper-bijou ul li a {
+.wrapper-bijou ul li a, .wrapper-taza ul li a {
   border: none;
   outline: none;
   font-size: 15px;
@@ -262,13 +205,13 @@ h1 {
   text-decoration: none;
 }
 
-.bijou-container {
+.bijou-container, .taza-container {
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-.caja-bijou {
+.caja-bijou, .caja-taza {
   padding: 70px;
   text-align: center;
   border-radius: 5px;
@@ -276,13 +219,13 @@ h1 {
   margin: 20px;
 }
 
-.caja-bijou img {
+.caja-bijou img, .caja-taza img {
   height: 250px;
   padding-top: 3px;
   width: 100%;
 }
 
-.caja-bijou p {
+.caja-bijou p, .caja-taza p {
   color: #444;
   padding: 10px 0;
   font-size: 20px;

@@ -21,7 +21,6 @@
     }
 }
 h1{
-    background-color: nth($colores, 7 );
     @extend %h1;
 }
 
