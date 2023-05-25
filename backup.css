@@ -397,6 +397,8 @@ h1{
     transform: scale(1.03);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
+/*FIN seccion TAZA*/
+/*Login*/
 .login-container {
     display: grid;
     gap: 15px;
@@ -405,8 +407,6 @@ h1{
     justify-content: center;  /**/
    
 }
-/*FIN seccion TAZA*/
-/*Login*/
 .caja-login{
     padding: 70px;
     text-align: center;
