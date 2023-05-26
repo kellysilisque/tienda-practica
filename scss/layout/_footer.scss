@@ -1,0 +1,76 @@
+.pie-pagina {
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.575); 
+    
+    .grupo{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+      
+        a{
+            text-decoration: none;
+            transition: all 300ms ease;
+        }
+
+        .box{
+            h2{
+                color: nth($colores, 1 );
+                margin-bottom: 25px;
+                font-size: 20px;
+            }
+            figure{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img{
+                    width: 160px;
+                }
+            }
+        }
+        .red-social {
+            a{
+                display: inline-block;
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                color: nth($colores, 4 );
+                margin-right: 10px;
+                background-color: rgba(105, 105, 105, 0.5);
+                text-align: center;
+            }
+        }
+
+        h2{
+            &:hover{
+                color: nth($colores, 5 );
+            }
+        }
+
+        @include mobile {
+            width: 90%;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 30px;
+            padding: 35px 0px;
+        }
+    }
+    
+
+    .grupo-1{
+        background-color: rgb(73, 73, 73);
+        padding: 15px 10px;
+        text-align: center;
+        color: nth($colores, 1 );
+
+        small{
+            font-size: 15px;
+        
+        }
+    }
+}

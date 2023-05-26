@@ -10,14 +10,29 @@
     align-items: center;
     justify-content: space-around;
     z-index: 1000;
-    padding: 0 10px;
-      
+    padding: 0 10px;   
+
+    @include mobile {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;  
+        
+    }
+
     .logo{
         img{
-    width: 150px;
+           width: 150px;
         }
     }
-   .navbar 
+   .navbar {
+    @include mobile {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: gainsboro;
+        display: none;
+    }
     ul{
         li{
             position: relative;
@@ -33,6 +48,9 @@
                      color: nth($colores,1 );
                     }
             }
+            @include mobile {
+                width: 100%;
+            }
         }
     }
         
@@ -40,15 +58,29 @@
      cursor: pointer;
      display: none;
     }
+  } 
 }
 .back{
     padding: 32px 0;
     background-color:nth($colores,6);
     height: 90px;   
+
+    .logo {
+        img {
+            @include mobile {
+                width: 130px;
+            }
+        }
+    }
 }
 
 #menu{
     display: none;
+    &:checked ~.navbar {
+        @include mobile {
+            display: initial;
+        }
+    }
 }
 .menu-icono{
     width: 25px;
@@ -58,3 +90,6 @@
     text-align: center;
     margin-top: 3px;
 }
+
+
+
