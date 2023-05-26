@@ -1,5 +1,8 @@
 .wrapper-bijou {
     @extend %b-t-c;
+    @include mobile {
+        padding: 20px;
+    }
 
     ul{
         background-color: nth($colores, 4 );
@@ -34,6 +37,10 @@ h1{
 
     img{
         @extend %boxs1-img;
+        @include mobile {
+            height: 180px;
+            padding-top: 3px;
+        }
     }
     p{
         @extend %boxs1-p;

@@ -1,5 +1,8 @@
 .wrapper{
     @extend %b-t-c;
+    @include mobile {
+        padding: 20px;
+    }
 }
 h3 { 
     background-color: nth($colores, 7 );
