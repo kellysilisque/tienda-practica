@@ -111,4 +111,9 @@ label{
         transform: scale(1.03);
         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
     }
+    @include mobile {
+            width: 100%;
+            padding: 8px;
+        
+       }
 }

@@ -339,6 +339,12 @@ label {
   transform: scale(1.03);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
+@media (max-width: 991px) {
+  .submit {
+    width: 100%;
+    padding: 8px;
+  }
+}
 
 /*contacto*/
 @media (max-width: 991px) {
