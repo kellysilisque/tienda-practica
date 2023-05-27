@@ -11,7 +11,7 @@
         li{
             a {
                 color: nth($colores, 1 );
-                background: rgb(211, 176, 252); /*cambie el color*/
+                background: rgb(211, 176, 252);
                 @extend %lista-box;
 
                 &:hover {
