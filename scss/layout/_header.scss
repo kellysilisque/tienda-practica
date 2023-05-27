@@ -84,6 +84,11 @@
 }
 .menu-icono{
     width: 25px;
+    display: none;
+
+    @include mobile {
+        display: block;
+    }
 }
 .aviso{
     background: nth($colores,3 );

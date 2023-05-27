@@ -91,6 +91,12 @@
 
 .menu-icono {
   width: 25px;
+  display: none;
+}
+@media (max-width: 991px) {
+  .menu-icono {
+    display: block;
+  }
 }
 
 .aviso {
